@@ -66,10 +66,10 @@
 			</div>
 				
 		<div>
-			<input type="button" value="C" >
+			<input type="button" value="C"  onclick="op.value=''" />
 			<input type="button" value="AC" onclick="op.value='' " />
-			<input type="button" value="/" onclick="op.value="  class="oprs">
-			<input type="button" value="%" onclick="op.value='' "  class="oprs" />
+			<input type="button" value="/" onclick="op.value+='/' "  class="oprs"  />
+			<input type="button" value="%" onclick="op.value+='%' "  class="oprs" />
 		</div>
 		<div>
 			<input type="button" value="9" onclick="op.value+='9' " >
@@ -91,7 +91,7 @@
 		</div>
 		<div>
 			<input type="button" value="0" onclick="op.value+='0' " >
-			<input type="button" value="." onclick="op.value='.' " />
+			<input type="button" value="." onclick="op.value+='.' " />
 			<input type="button" class="eq" value="=" onclick="op.value=eval(op.value)"  class="oprs" />
 			
 		</div>
